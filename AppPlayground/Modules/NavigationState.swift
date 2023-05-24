@@ -7,5 +7,5 @@
 
 
 enum NavigationState: Hashable {
-    case homeView
+    case testView
 }

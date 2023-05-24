@@ -22,8 +22,8 @@ struct ContentView: View {
             HomeBuilder.build(navigationPath: $navigationPath)
                 .navigationDestination(for: NavigationState.self) { destination in
                     switch destination {
-                    case .homeView:
-                        HomeBuilder.build(navigationPath: $navigationPath)
+                    case .testView:
+                        TestBuilder.build(navigationPath: $navigationPath)
                     }
                 }
         }

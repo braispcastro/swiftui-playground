@@ -1,5 +1,5 @@
 //
-//  Custom+Color.swift
+//  Color+Custom.swift
 //  AppPlayground
 //
 //  Created by Brais Castro on 24/5/23.

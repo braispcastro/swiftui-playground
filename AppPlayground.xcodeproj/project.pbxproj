@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0F66E42A1E9FCA00C471A8 /* TestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F66E32A1E9FCA00C471A8 /* TestBuilder.swift */; };
+		9B0F66E62A1E9FE900C471A8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F66E52A1E9FE900C471A8 /* TestView.swift */; };
+		9B0F66E82A1EA02300C471A8 /* TestView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F66E72A1EA02300C471A8 /* TestView+ViewModel.swift */; };
+		9B4653AC2A1E95E7004C3734 /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4653AB2A1E95E7004C3734 /* View+Navigation.swift */; };
 		9BB012842A1E7AF800E9C094 /* AppPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB012832A1E7AF800E9C094 /* AppPlaygroundApp.swift */; };
 		9BB012882A1E7AF900E9C094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB012872A1E7AF900E9C094 /* Assets.xcassets */; };
 		9BB0128B2A1E7AF900E9C094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB0128A2A1E7AF900E9C094 /* Preview Assets.xcassets */; };
@@ -17,10 +21,14 @@
 		9BB0129F2A1E808B00E9C094 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0129E2A1E808B00E9C094 /* HomeBuilder.swift */; };
 		9BB012A12A1E809800E9C094 /* HomeView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB012A02A1E809800E9C094 /* HomeView+ViewModel.swift */; };
 		9BB012A32A1E81C100E9C094 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB012A22A1E81C100E9C094 /* NavigationState.swift */; };
-		9BB012A72A1E83A800E9C094 /* Custom+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB012A62A1E83A800E9C094 /* Custom+Color.swift */; };
+		9BB012A72A1E83A800E9C094 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB012A62A1E83A800E9C094 /* Color+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B0F66E32A1E9FCA00C471A8 /* TestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBuilder.swift; sourceTree = "<group>"; };
+		9B0F66E52A1E9FE900C471A8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		9B0F66E72A1EA02300C471A8 /* TestView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestView+ViewModel.swift"; sourceTree = "<group>"; };
+		9B4653AB2A1E95E7004C3734 /* View+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 		9BB012802A1E7AF800E9C094 /* AppPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB012832A1E7AF800E9C094 /* AppPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPlaygroundApp.swift; sourceTree = "<group>"; };
 		9BB012872A1E7AF900E9C094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +40,7 @@
 		9BB0129E2A1E808B00E9C094 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		9BB012A02A1E809800E9C094 /* HomeView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+ViewModel.swift"; sourceTree = "<group>"; };
 		9BB012A22A1E81C100E9C094 /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
-		9BB012A62A1E83A800E9C094 /* Custom+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Color.swift"; sourceTree = "<group>"; };
+		9BB012A62A1E83A800E9C094 /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0F66E22A1E9FB100C471A8 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				9B0F66E32A1E9FCA00C471A8 /* TestBuilder.swift */,
+				9B0F66E52A1E9FE900C471A8 /* TestView.swift */,
+				9B0F66E72A1EA02300C471A8 /* TestView+ViewModel.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		9BB012772A1E7AF800E9C094 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +104,7 @@
 			children = (
 				9BB012922A1E7BA000E9C094 /* Content */,
 				9BB0129B2A1E806900E9C094 /* Home */,
+				9B0F66E22A1E9FB100C471A8 /* Test */,
 				9BB012A22A1E81C100E9C094 /* NavigationState.swift */,
 			);
 			path = Modules;
@@ -131,7 +150,8 @@
 		9BB012A52A1E839A00E9C094 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9BB012A62A1E83A800E9C094 /* Custom+Color.swift */,
+				9BB012A62A1E83A800E9C094 /* Color+Custom.swift */,
+				9B4653AB2A1E95E7004C3734 /* View+Navigation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,15 +226,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0F66E62A1E9FE900C471A8 /* TestView.swift in Sources */,
 				9BB012A12A1E809800E9C094 /* HomeView+ViewModel.swift in Sources */,
 				9BB012A32A1E81C100E9C094 /* NavigationState.swift in Sources */,
 				9BB0129F2A1E808B00E9C094 /* HomeBuilder.swift in Sources */,
 				9BB012942A1E7BB700E9C094 /* ContentView.swift in Sources */,
 				9BB012972A1E7C1E00E9C094 /* ContentView+ViewModel.swift in Sources */,
 				9BB012842A1E7AF800E9C094 /* AppPlaygroundApp.swift in Sources */,
+				9B4653AC2A1E95E7004C3734 /* View+Navigation.swift in Sources */,
 				9BB0129D2A1E807700E9C094 /* HomeView.swift in Sources */,
-				9BB012A72A1E83A800E9C094 /* Custom+Color.swift in Sources */,
+				9BB012A72A1E83A800E9C094 /* Color+Custom.swift in Sources */,
+				9B0F66E82A1EA02300C471A8 /* TestView+ViewModel.swift in Sources */,
 				9BB012992A1E7C5400E9C094 /* ContentBuilder.swift in Sources */,
+				9B0F66E42A1E9FCA00C471A8 /* TestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

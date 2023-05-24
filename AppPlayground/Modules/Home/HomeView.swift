@@ -19,16 +19,37 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            VStack {
-                Spacer()
-                
-                Button("NAVIGATE") {
-                    navigationPath.append(.homeView)
+            ScrollView {
+                ForEach(0 ..< 15) { item in
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.orange)
+                        .frame(height: 44)
+                        .padding()
                 }
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle("HomeView")
+        .customNavigation(
+            title: "HomeView",
+            toolbar: { toolbar },
+            content: { navigationContent },
+            navigationPath: $navigationPath
+        )
+    }
+    
+    
+    // MARK: - View Accessories
+    
+    var toolbar: some View {
+        HStack {
+            Button(action: { navigationPath.append(.testView) }) {
+                Image(systemName: "lightbulb")
+            }
+        }
+    }
+    
+    var navigationContent: some View {
+        Text("With safeAreaInset you can create your own custom nav bar.")
+            .font(.caption)
     }
 }
 
